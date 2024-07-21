@@ -3,6 +3,8 @@ const router = express.Router();
 const bcrypt = require('bcrypt');
 const registerUser = require('../modules/register');
 
+router.post('/', async (req, res) => res.json({message:'hello world'}));
+
 // User registration route
 router.post('/register', async (req, res) => {
   try {
